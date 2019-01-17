@@ -4,7 +4,7 @@ class TodoList extends Component{
         return(
             <div className=''>
                 <div className=''>
-                    <form>
+                    <form onSubmit={this.props.addItem}>
                         <input placeholder='Task' />
                         <button type='submit'> Add Task</button>
                     </form>
